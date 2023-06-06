@@ -208,20 +208,20 @@
         <h2 class="heading">
             Contact <span>Me</span>
         </h2>
-
-        <form action="https://formsubmit.co/ishti504@gmail.com" method="post">
+<!-- https://formsubmit.co/d2470d6059cfa801521ac68f8002a180 -->
+        <form action="" method="">
             <div class="input-box">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
 
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Phone Number" required>
-                <input type="text" placeholder="Subject">
+                <input type="number" id="phone" placeholder="Phone Number" required>
+                <input type="text" id="subject" placeholder="Subject">
 
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Query"></textarea>
-            <input type="submit" class="btn" value="Send Message">
+            <textarea name="" id="msg" cols="30" rows="10" placeholder="Your Query"></textarea>
+            <input type="submit" onclick="sendmail()"class="btn" value="Send Message">
         </form>
     </section>
 
@@ -241,6 +241,16 @@
 
     </footer>
     <!-- Customised Js section -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("FyzZIJ7qFV0Od_lRL");
+   })();
+</script>
+
+
     <script src="js/script.js"></script>
 </body>
 
