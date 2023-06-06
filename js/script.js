@@ -81,7 +81,7 @@ function sendmail() {
             document.getElementById("subject").value = "";
             document.getElementById("msg").value = "";
             console.log(res);
-            alert("your message sent successfully");
+            swal("Thank you for reaching out to us!", "We have received your message successfully!", "success");  // alert("your message sent successfully");
 
         }).catch((err) => console.log(err));
 }
