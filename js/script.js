@@ -64,7 +64,7 @@ ScrollReveal().reveal('.home-content p, .about-content',{origin: 'right'});
 // === Typed JS code  ==//
 
 const typed = new Typed('.multiple-text',{
-strings: ['Full Stack Developer','Youtuber','Day-Dreamer','Blogger'],
+strings: ['Full Stack Developer_','Youtuber_','Day-Dreamer_','Blogger_'],
 
 typeSpeed: 100,
 backSpeed:99,
@@ -103,7 +103,7 @@ function sendmail() {
             document.getElementById("subject").value = "";
             document.getElementById("msg").value = "";
             console.log(res);
-            swal("Thank you for reaching out to us!", "We have received your message successfully!", "success");  // alert("your message sent successfully");
+            swal("Thank you for reaching out to me!", "I have received your message successfully!", "success");  // alert("your message sent successfully");
 
         }).catch((err) => console.log(err));
 }
