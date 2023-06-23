@@ -27,11 +27,13 @@ html {
     overflow-x: hidden;
 
 }
-
+/* preventing from copy paste */
+ 
 body {
 
     background: var(--bg-color);
     color: var(--text-color);
+    user-select: none;
 }
 
 section {
