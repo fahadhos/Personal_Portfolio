@@ -704,7 +704,7 @@ width: 100%;
    position: fixed;
     cursor: pointer; 
     animation: floating 7.2s ease-in-out infinite;
-    margin-left: -73px;
+    margin-left: -90px;
 }
 @keyframes floating{
     0%{
