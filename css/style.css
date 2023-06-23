@@ -704,7 +704,7 @@ width: 100%;
    position: fixed;
     cursor: pointer; 
     animation: floating 7.2s ease-in-out infinite;
-    margin-left: -89px;
+    margin-left: -73px;
 }
 @keyframes floating{
     0%{
@@ -879,7 +879,7 @@ width: 100%;
     .home-img img{
 
         width: 70vw;
-        margin-top: 4rem;
+        margin-top: 8rem;
 
     }
     .about{
