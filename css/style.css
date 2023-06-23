@@ -329,6 +329,9 @@ padding-top: .5rem;
     padding-bottom:7rem ;
     background: var(--second-bg-color);
 }
+.skills h2{
+    margin-bottom: 90px;
+}
 
 .skills .skills-row{
     display: flex;
@@ -429,8 +432,11 @@ width: 100%;
     width: 60%;
 }
 
-
-
+/* Blog post section */
+.blog h2{
+    margin-bottom: 30px;
+}
+/* end of blog  */
 
 /* Services css */
 .services h2 {
