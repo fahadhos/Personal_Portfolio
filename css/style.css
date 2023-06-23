@@ -191,6 +191,8 @@ span {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease-in-out;
+
+    
 }
 
 .btn:hover {
@@ -673,8 +675,29 @@ width: 100%;
     resize: none;
 
 }
-.contact form .btn-box .btns .btn{
+/* .contact form .btn-box .btns .btn{
     cursor: pointer;
+} */
+
+
+.contact form .btn-box.btns .btn {
+    
+   position: fixed;
+    cursor: pointer; 
+    animation: floating 7.2s ease-in-out infinite;
+    margin-left: -89px;
+}
+@keyframes floating{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 /* .contact form .input-box {
