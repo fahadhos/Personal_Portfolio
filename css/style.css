@@ -48,7 +48,7 @@ section {
     width: 100%;
     padding: 2rem 9%;
   
-    background: var(--bg-color);
+    background: var(--bg-color); 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +57,8 @@ section {
 
 .header .sticky {
 
-    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    border-bottom: .1rem solid rgba(12, 48, 249, 0.2);
+  
 }
 
 .logo {
@@ -177,7 +178,7 @@ span {
     box-shadow: 0 0 1.5rem var(--main-color);
  /* transform: scale(1.02); */
 }
-/* for Button */
+/* for  Button */
 .btn {
 
     display: inline-block;
@@ -195,9 +196,31 @@ span {
     
 }
 
+
 .btn:hover {
     box-shadow: none;
 }
+/* Download button CV floating  */
+.download   {
+    
+     position: fixed;
+     cursor: pointer; 
+     animation: floating 5.9s ease-in-out infinite;
+     margin-left: auto;
+ }
+ @keyframes floating{
+     0%{
+         transform: translateY(0);
+     }
+     50%{
+         transform: translateY(-10px);
+ 
+     }
+     100%{
+         transform: translateY(0);
+     }
+ }
+
 /* About css */
 .about {
 
