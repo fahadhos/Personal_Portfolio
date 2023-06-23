@@ -97,13 +97,26 @@ function sendmail() {
 
     emailjs.send(serviceid, templateid, params).then(
         res => {
-            document.getElementById("name").value = "";
+            if( document.getElementById("name").value!== ""|| 
+            document.getElementById("email").value !== ""||
+            document.getElementById("phone").value !== ""||
+            document.getElementById("subject").value !== ""||
+            document.getElementById("msg").value !== ""  )
+            {
+                 document.getElementById("name").value = "";
             document.getElementById("email").value = "";
             document.getElementById("phone").value = "";
             document.getElementById("subject").value = "";
             document.getElementById("msg").value = "";
             console.log(res);
+
             swal("Thank you for reaching out to me!", "I have received your message successfully!", "success");  // alert("your message sent successfully");
 
+            }
+            else {
+                // Perform any other actions or show an error message if the fields are empty
+                swal("Error", "Please fill in all the required fields.", "error");
+              }
+           
         }).catch((err) => console.log(err));
 }
