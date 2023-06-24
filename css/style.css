@@ -430,20 +430,34 @@ width: 100%;
     border-radius: .3rem;
     background-color: #39ff14;
 }
+/* coding skill bar */
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
     width: 90%;
+    /* Html */
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
     width: 70%;
+    /* css */
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
-    width: 60%;
+    width: 85%;
+    /* github */
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
-    width: 60%;
+    width: 80%;
+    /* mysql */
 }
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span{
+    width: 60%;
+    /* JS */
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span{
+    width: 60%;
+    /* python */
+}
+/* Professional skill bar */
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
     width: 90%;
 }
