@@ -121,3 +121,28 @@ function sendmail() {
            
         }).catch((err) => console.log(err));
 }
+
+
+//<!-- download er jonno custom date append korar script -->
+ 
+    // Function to get the current date in the desired format
+    function getFormattedDate() {
+      var date = new Date();
+      var year = date.getFullYear();
+      var month = String(date.getMonth() + 1).padStart(2, '0'); // Month starts from 0
+      var day = String(date.getDate()).padStart(2, '0');
+      return year + '-' + month + '-' + day;
+    }
+  
+    // Function to update the download link with the current date
+    function updateDownloadLink() {
+      var downloadLink = document.getElementById('downloadLink');
+      var currentDate = getFormattedDate();
+      downloadLink.setAttribute('download', 'Fahad_Hossain_Resume_File_' + currentDate + '.pdf');
+    }
+  
+    // Call the function to update the download link on page load
+    updateDownloadLink();
+  
+  
+//<!-- download er jonno custom date append korar script -->
