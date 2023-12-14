@@ -3,8 +3,7 @@
 
 let menuicon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
-
-
+ 
 menuicon.onclick = () => {
     menuicon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
@@ -64,7 +63,7 @@ ScrollReveal().reveal('.home-content p, .about-content',{origin: 'right'});
 // === Typed JS code  ==//
 
 const typed = new Typed('.multiple-text',{
-strings: ['Full Stack Developer_','Youtuber_','Day-Dreamer_','Blogger_'],
+strings: ['Jr. Front-End Web Developer_'],
 
 typeSpeed: 100,
 backSpeed:99,
@@ -93,8 +92,8 @@ function sendmail() {
 
 
     const serviceid = "service_p91amrr";
-    const templateid = "template_5qku9qn";
-    // const templateid = "template_rj3r7bp";
+    // const templateid = "template_5qku9qn";
+    const templateid = "template_rj3r7bp";
 
     emailjs.send(serviceid, templateid, params).then(
         res => {
@@ -146,3 +145,39 @@ function sendmail() {
   
   
 //<!-- download er jonno custom date append korar script -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// For Preloader chatgpt  
+// Add this script after your HTML and CSS code
+document.addEventListener("DOMContentLoaded", function() {
+    var downloadButton = document.getElementById("downloadLink");
+    var preloader = document.querySelector(".preloader");
+  
+    downloadButton.addEventListener("click", function() {
+      preloader.classList.add("active");
+    });
+  
+    downloadButton.addEventListener("blur", function() {
+      preloader.classList.remove("active");
+    });
+  
+    downloadButton.addEventListener("focus", function() {
+      preloader.classList.remove("active");
+    });
+  });
+  
