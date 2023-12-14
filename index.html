@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fahad's-Portfolio</title>
-    <link rel="stylesheet" href="css\style.css" />
 
+    <!-- Main css sheet -->
+    <link rel="stylesheet" href="css/style.css" />
     <!-- favicon -->
     <link rel="icon" sizes=" " href="images/favicon.ico" />
     <!-- boxicon -->
@@ -15,9 +16,9 @@
       rel="stylesheet"
     />
     <!-- daisy khala css -->
-    <!-- <link rel="stylesheet" href="css/daisyui_dist_full.css"> -->
-    <!-- tailwind js -->
-    <!-- <script src="js/tailwind.js"></script> -->
+
+    <!-- bg effect css -->
+    <link rel="stylesheet" href="css/sphere.css" />
   </head>
 
   <body>
@@ -42,50 +43,35 @@
     </header>
 
     <!-- Home section -->
-    <section class="home" id="home">
+    <section class="home" id="home" style="max-width: fit-content;">
       <div class="home-content">
         <h3>Hello, It's Me</h3>
         <h1>Fahad Hossain</h1>
 
         <h3>
-          And I'm a <span class="multiple-text"> Frontend Developer</span>
+          And I'm .. <br><span class="multiple-text">  </span>
         </h3>
-        <p>I am doing various complete web-development courses</p>
+        <!-- <p>I am doing various complete web-development courses</p> -->
         <div class="social-media">
           <!-- fb link -->
-          <a
-            target="_blank"
-            href="https://www.facebook.com/fahadkingchy"
-            target="_blank"
-          >
+          <a target="_blank" href="https://www.facebook.com/fahadkingchy">
             <i class="bx bxl-facebook-circle"></i
           ></a>
-          <!-- Git link -->
-          <a
-            target="_blank"
-            href="https://github.com/fahadhos/"
-            target="_blank"
-          >
+          <!-- Github link -->
+          <a href="https://github.com/fahadhos/" target="_blank">
             <i class="bx bxl-github"></i
           ></a>
           <!-- Linkdin -->
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/fahadhos/"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/fahadhos/" target="_blank">
             <i class="bx bxl-linkedin-square"></i
           ></a>
           <!-- twitter -->
-          <a
-            target="_blank"
-            href="https://twitter.com/fahadhosk"
-            target="_blank"
-            ><i class="bx bxl-twitter" target="_blank"></i>
+          <a href="https://twitter.com/fahadhosk" target="_blank"
+            ><i class="bx bxl-twitter"></i>
           </a>
           <!-- blogpost -->
           <a target="_blank" href="https://fahadhos.blogspot.com/"
-            ><i class="bx bxl-blogger" target="_blank"></i>
+            ><i class="bx bxl-blogger"></i>
           </a>
           <!-- href="https://flowcv.com/resume/opf08l1flj"  -->
         </div>
@@ -98,14 +84,27 @@
           id="downloadLink"
           href="cv/Fahad_Hossain_Resume_2023.pdf"
           download
-          class="download btn"
-          >Download CV</a
+          class="download btnn"
         >
+          Download CV
+          <box-icon
+            class="boxi"
+            style="position: relative; top: 5px"
+            name="cloud-download"
+          ></box-icon>
+          <div class="preloader">
+            <div class="spinner"></div>
+          </div>
+        </a>
+
+        
+
+        <!-- Download button area finished -->
       </div>
 
-      <div class="home-img">
+      <div class="home-img" style="margin-left: 6rem;">
         <!-- <img src="images/Pro2.png" alt="" /> -->
-        <img src="images/New_propic.png" alt="" />
+        <img src="images/profile1.png" alt="" />
       </div>
     </section>
 
@@ -113,19 +112,16 @@
     <section class="about" id="about">
       <div class="about-img">
         <!-- <img src="images/about.png" alt="" /> -->
-        <img src="images/Aboutmenewpic.png" alt="" />
+        <img src="images/profile1.png" alt="about-pic" />
       </div>
       <div class="about-content">
         <h2 class="heading">About <span>Me_ </span></h2>
         &nbsp;&nbsp;<br />&nbsp;&nbsp;<br />&nbsp;&nbsp;<br />
-        <h3>Full-Stack Developer</h3>
+        <h3>Jr.Front-End Web Developer</h3>
         <p>
-          I'm driven by a desire to grow professionally while also helping the
-          company I work for. I'm a driven and ambitious individual that always
-          strives for personal growth in order to broaden and strengthen my
-          skill set.
+          I'm a Junior Front-End Web Developer and pretending to become a Senior Developer one day. It's a challenging journey, but I'm willing to put in the hard work & dedication.
         </p>
-        <a href="#" class="btn">Read More</a>
+        <a href="#" class="btnn">Read More</a>
       </div>
     </section>
     <!-- Education section  -->
@@ -142,13 +138,13 @@
             <div class="education-content">
               <div class="content">
                 <div class="year">
-                  <i class="bx bxs-calendar"> 2019-2023</i>
+                  <i class="bx bxs-calendar"> 2019-2024</i>
                 </div>
                 <h3>
                   International Islamic University Chittagong, B.Sc in Computer
                   Science and Engineering
                 </h3>
-                <p>Current Result CGPA 3.693</p>
+                <!-- <p>Current Result CGPA 3.686</p> -->
               </div>
             </div>
 
@@ -161,7 +157,7 @@
                   Chittagong Government Model School and College, Higher
                   Secondary School Certificate(HSC), Science
                 </h3>
-                <p>Passed SSC Exam scored GPA 4.0</p>
+                <!-- <p>Passed SSC Exam scored GPA 4.0</p> -->
               </div>
             </div>
 
@@ -174,24 +170,16 @@
                   Government Muslim High School, Secondary School
                   Certificate(SSC), Science
                 </h3>
-                <p>Passed SSC Exam scored GPA 5.0</p>
+                <!-- <p>Passed SSC Exam scored GPA 5.0</p> -->
               </div>
             </div>
-            <div class="education-content">
-              <div class="content">
-                <div class="year">
-                  <i class="bx bxs-calendar"> 2023-Present</i>
-                </div>
 
-                <h3>Complete Web Development Course With Jhankar Mahbub</h3>
-                <p>Programming Hero</p>
-              </div>
-            </div>
+           
           </div>
         </div>
 
         <!-- Experience part -->
-        <div class="education-column">
+        <!-- <div class="education-column">
           <h3 class="title">Experiences</h3>
 
           <div class="education-box">
@@ -205,7 +193,7 @@
               </div>
             </div>
 
-            <!-- <div class="education-content">
+            <div class="education-content">
                         <div class="content">
                             <div class="year">
                                 <i class="bx bxs-calendar"> 2023</i>
@@ -213,7 +201,7 @@
                             <h3> Web-Developer, Company</h3>
                             <p>Currently working as lead dev.</p>
                         </div>
-                    </div> -->
+                    </div>
 
             <div class="education-content">
               <div class="content">
@@ -224,33 +212,39 @@
                 <p>Coming soon!.</p>
               </div>
             </div>
+
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
     <!-- end of education nd experience -->
+
+    <!-- _________ SKILLS_______________________________________________________________________________________________ -->
+
     <!-- Skills section -->
 
     <section class="skills" id="skills">
       <h2 class="heading">My <span>Skills_</span></h2>
+
+      <span class="Sphere"></span>
       <div class="skills-row">
         <div class="skills-column">
-          <h3 class="title">Coding Skills</h3>
+          <h3 class="title">  Skills & Tools</h3>
 
           <div class="skills-box">
             <div class="skills-content">
               <div class="progress">
-                <h3>HTML <span>90%</span></h3> 
+                <h3>ReactJs <span>40%</span></h3>
                 <div class="bar"><span></span></div>
               </div>
 
               <div class="progress">
-                <h3>CSS <span>70%</span></h3>
+                <h3>TailwindCss <span>60%</span></h3>
                 <div class="bar"><span></span></div>
               </div>
               <div class="progress">
-                <h3>Github <span>85%</span></h3>
+                <h3>Github <span>80%</span></h3>
                 <div class="bar"><span></span></div>
               </div>
               <div class="progress">
@@ -263,7 +257,7 @@
                 <div class="bar"><span></span></div>
               </div>
               <div class="progress">
-                <h3>Python <span>60%</span></h3>
+                <h3>Git <span>60%</span></h3>
                 <div class="bar"><span></span></div>
               </div>
             </div>
@@ -275,10 +269,11 @@
 
           <div class="skills-box">
             <div class="skills-content">
-              <div class="progress">
+         
+              <!--  <div class="progress">
                 <h3>Web Design <span>90%</span></h3>
                 <div class="bar"><span></span></div>
-              </div>
+              </div> -->
 
               <div class="progress">
                 <h3>Web development <span>70%</span></h3>
@@ -286,7 +281,7 @@
               </div>
 
               <div class="progress">
-                <h3>Photography <span>80%</span></h3>
+                <h3>Mobile Photography <span>80%</span></h3>
                 <div class="bar"><span></span></div>
               </div>
               <div class="progress">
@@ -297,6 +292,43 @@
           </div>
         </div>
       </div>
+
+      <!-- Sphere js add korlam skill showcase dekhao -->
+
+      <!-- <script type="text/javascript" src="./dist/TagCloud.min.js"></script>
+      <script>
+        const Texts = [
+          "HTML5",
+          "CSS",
+          "Tailwind",
+          "DaisyUi",
+          "Bootstrap",
+          "Javascript",
+          "Github",
+          "MySql",
+          "MongoDB",
+          "Netlify",
+          "Django",
+          "React",
+          "C++",
+          "Python",
+        ];
+ 
+        var tagCloud = TagCloud(".Sphere", Texts, {
+          // Sphere radius in pixel values
+          radius: 230,
+          maxSpeed: "normal",
+          initSpeed: "fast",
+          // rolling direction [0(top), 90(left),135(right-bottom)]
+          direction: 135,
+          keep: true,
+        });
+
+        var color = "#FF5733 ";
+        document.querySelector(".Sphere").style.color = color;
+      </script> -->
+
+      <!-- Sphere js add korlam skill showcase dekhao -->
     </section>
     <!-- end of skill -->
 
@@ -318,21 +350,22 @@
           <i class="bx bx-code-alt"></i>
           <h3>Web development</h3>
           <p>Exploring and learning. To be continued...</p>
-          <a href="#" class="btn">Read More</a>
+          <a href="#" class="btnn">Read More</a>
         </div>
         <!-- graphics -->
         <div class="services-box">
           <i class="bx bxl-sketch"></i>
           <h3>Graphics Design</h3>
           <p>Can do simple graphics design using Canva</p>
-          <a href="#" class="btn">Read More</a>
+          <a href="#" class="btnn">Read More</a>
         </div>
         <!-- blog  -->
+        <!-- mone rakhba ami btn class name chng kore btnn disi karon tailwind er sathe conflict hobey -->
         <div class="services-box">
           <i class="bx bxl-blogger"></i>
           <h3>Blog Posting</h3>
           <p>Love to share interesting blogs</p>
-          <a href="#" class="btn">Read More</a>
+          <a href="#" class="btnn">Read More</a>
         </div>
       </div>
     </section>
@@ -342,14 +375,18 @@
     <section class="portfolio" id="portfolio">
       <!-- Latest projects section -->
       <h2 class="heading">Latest <span>Projects_ </span></h2>
+
+      <!--  -->
+ 
+      <!--  -->
       <div class="portfolio-container">
         <div class="portfolio-box">
           <img src="images/portfolio.jpg" alt="" />
           <div class="portfolio-layer">
             <h4>Personal Portfolio Project</h4>
             <p>
-              I have made this portfolio backend sys on contact form, prevent
-              from copy and paste
+              Integrated Emailjs in contact form, 
+              prevent content from copy and paste.
             </p>
             <a
               title="Source code link"
@@ -359,11 +396,30 @@
           </div>
         </div>
         <div class="portfolio-box">
+          <img src="images/project_images/task-tide-wave-by-fahadhos-netlify-app.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>This website created with Js for counting Tasbih</h4>
+            <p>Added Vibration mode while tapping on counter using mobile</p>
+            <!-- <p>Technology & language: TailwindCss, DaisyUi,HTML,Netlify</p> -->
+            <a href="https://github.com/fahadhos/Task-Tide-Wave.git"> <i class="bx bx-link-external"></i></a>
+            <a href="https://task-tide-wave-by-fahadhos.netlify.app"> <i class="bx bxs-slideshow"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images/portfolio2.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Gadget Glow</h4>
+            <p>User can add product ,brands see details of product and add into cart</p>
+            <a href="https://github.com/fahadhos/Task-Tide-Wave.git"> <i class="bx bx-link-external"></i></a>
+            <a href="https://gadgetglow.web.app"> <i class="bx bxs-slideshow"></i></a>
+           </div>
+        </div>
+        <!-- <div class="portfolio-box">
           <img src="images/portfolio1.jpg" alt="" />
           <div class="portfolio-layer">
             <h4>Web development</h4>
-            <p>Coming soon!!</p>
-            <a href=""> <i class="bx bx-link-external"></i></a>
+            <p>Under development</p>
+            <a href=""><i class="bx bx-link-external"></i></a>
           </div>
         </div>
         <div class="portfolio-box">
@@ -381,25 +437,12 @@
             <p>Under development</p>
             <a href=""><i class="bx bx-link-external"></i></a>
           </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portfolio2.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Web development</h4>
-            <p>Under development</p>
-            <a href=""><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portfolio1.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Web development</h4>
-            <p>Under development</p>
-            <a href=""><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
+        </div> -->
+
+
       </div>
     </section>
+
     <!-- Contact Form Page Code -->
 
     <section class="contact" id="contact">
@@ -428,12 +471,13 @@
 
         <div class="input-box">
           <div class="input-field">
+              <!-- pattern="[0-9]{11}" -->
             <input
               type="tel"
               title="eg: 01818XXXXXX"
-              pattern="[0-9]{11}"
+            
               id="phone"
-              placeholder="Phone Number"
+              placeholder="Phone Number eg: 01818XXXXXX"
               required
             />
             <span class="focus"></span>
@@ -464,7 +508,7 @@
           <input
             type="submit"
             onclick="sendmail()"
-            class="btn"
+            class="btnn"
             value="Send Message"
           />
         </div>
@@ -484,8 +528,9 @@
     </footer>
     <!-- Customised Js section -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
+    
     <script
+   
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
@@ -498,6 +543,11 @@
         .getElementById("text")
         .addEventListener("paste", (e) => e.preventDefault);
     </script>
+
+<script>
+   console.log(process.env.template_public)
+</script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <!-- Typed Js  -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- Typography -->
@@ -506,6 +556,5 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- custom Js link -->
     <script src="js/script.js"></script>
-    <!-- tailwind config link -->
   </body>
 </html>
